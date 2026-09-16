@@ -46,7 +46,6 @@ npm install
 
 # run it
 npm run dev
-<<<<<<< HEAD
 ```
 
 Then open [http://localhost:3000](http://localhost:3000) and start clicking around.
@@ -65,23 +64,3 @@ This thing is being built in phases — not all modules are live yet. Rough orde
 - [ ] Quizzes / complexity cheat sheet
 
 Check the [issues](../../issues) tab to see what's cooking or to suggest a module.
- Trees (basic → advanced)
- Graphs
- Quizzes / complexity cheat sheet
-
-   - [x] Sorting + Searching
-   - [x] Stack + Queue
-   - [ ] Linked List
-
-Check the issues tab to see what's cooking or to suggest a module.
-
-🤝 Contributing
-
-Found a bug? Want to add an algorithm? PRs are welcome — just keep new visualizers consistent with the existing Step[] pattern (see /lib/algorithms) so the animation engine can pick them up without extra plumbing.
-
-📄 License
-
-MIT — do whatever you want with it, just don't sell it back to me.
-
-Made by [Your Name] — if this helped you understand DSA a little better, that's the whole point. ⭐ the repo if you want more people to find it.
->>>>>>> abe3472 (Phase 2: Stack & Queue visualizers (push/pop, enqueue/dequeue, circular, deque, priority queue, postfix/prefix evaluator))
