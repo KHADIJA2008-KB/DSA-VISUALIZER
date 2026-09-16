@@ -48,7 +48,7 @@ npm install
 npm run dev
 ```
 
-Then open [http://localhost:3000](http://localhost:3000) and start clicking around.
+Then open [http://localhost:3000](http://localhost:3000) or you can also visit it on [DSA-Visualizer](https://dsa-visualizer-vone.vercel.app/) and start clicking around.
 
 ---
 
