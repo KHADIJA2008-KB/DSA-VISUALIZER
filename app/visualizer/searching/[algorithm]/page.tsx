@@ -12,8 +12,8 @@ export function generateStaticParams() {
   return Object.keys(algorithms).map((algorithm) => ({ algorithm }))
 }
 
-export default async function SearchingAlgorithmPage({ params }: { params: Promise<{ algorithm: string }> }) {
-  const { algorithm } = await params
+export default function SearchingAlgorithmPage({ params }: { params: { algorithm: string } }) {
+  const { algorithm } = params
   const details = algorithms[algorithm as Algorithm]
 
   if (!details) notFound()

@@ -10,4 +10,34 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  @keyframes stack-push {
+    from {
+      opacity: 0;
+      transform: translateY(-2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes stack-pop {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-2rem);
+    }
+  }
+
+  .animate-stack-push {
+    animation: stack-push 220ms ease-out;
+  }
+
+  .animate-stack-pop {
+    animation: stack-pop 220ms ease-in forwards;
+  }
 }

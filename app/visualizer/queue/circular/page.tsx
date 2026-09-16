@@ -1,0 +1,6 @@
+import Link from 'next/link'
+import { CircularQueueVisualizer } from '@/components/CircularQueueVisualizer'
+
+export default function CircularQueuePage() {
+  return <div className="mx-auto max-w-5xl px-6 py-10 sm:px-10 sm:py-16"><Link href="/visualizer/queue/array" className="text-sm font-medium text-teal-600 hover:text-teal-500 dark:text-teal-400">← Queue visualizers</Link><div className="mt-10 max-w-3xl"><p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">Queue variant</p><h1 className="mt-4 text-5xl font-bold tracking-tight text-slate-950 dark:text-white">Circular queue</h1><p className="mt-5 text-lg leading-8 text-slate-600 dark:text-slate-400">See a fixed-size buffer reuse its empty slots as the front and rear wrap around.</p></div><section className="mt-10 max-w-3xl rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-950"><h2 className="font-semibold text-slate-900 dark:text-white">How a circular queue works</h2><p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">The rear advances when values enter and the front advances when values leave. Each pointer uses modulo capacity, so reaching the last slot wraps back to slot zero.</p></section><CircularQueueVisualizer /></div>
+}
