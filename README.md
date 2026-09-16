@@ -57,7 +57,7 @@ Then open [http://localhost:3000](http://localhost:3000) and start clicking arou
 This thing is being built in phases — not all modules are live yet. Rough order:
 
 - [x] Sorting + Searching
-- [ ] Stack + Queue
+- [x] Stack + Queue
 - [ ] Linked List
 - [ ] Trees (basic → advanced)
 - [ ] Graphs
