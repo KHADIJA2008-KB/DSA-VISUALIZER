@@ -14,7 +14,7 @@ export default function VisualizerPage() {
     <div className="mx-auto max-w-6xl px-6 py-10 sm:px-10 sm:py-16">
       <div className="max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-600 dark:text-teal-400">The learning lab</p>
-        <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-6xl">See the structure behind the code.</h1>
+        <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950 sm:text-6xl">See the structure behind the code.</h1>
         <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-400">Choose a category to explore how data moves, changes, and connects. Every visualizer is designed to make the invisible feel tangible.</p>
       </div>
 
