@@ -40,4 +40,61 @@ body {
   .animate-stack-pop {
     animation: stack-pop 220ms ease-in forwards;
   }
+
+  @keyframes ll-create {
+    from {
+      opacity: 0;
+      transform: scale(0.82) translateY(0.75rem);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  @keyframes ll-delete {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.82) translateY(-0.5rem);
+    }
+  }
+
+  @keyframes ll-pulse {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgb(251 191 36 / 0.15);
+    }
+    50% {
+      box-shadow: 0 0 0 7px rgb(251 191 36 / 0.08);
+    }
+  }
+
+  @keyframes ll-link {
+    from {
+      stroke-dashoffset: 100;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .animate-ll-create {
+    animation: ll-create 360ms ease-out both;
+  }
+
+  .animate-ll-delete {
+    animation: ll-delete 360ms ease-in forwards;
+  }
+
+  .animate-ll-link {
+    animation: ll-link 520ms ease-out both;
+  }
+
+  .animate-ll-create:has(+ .sr-only),
+  .border-amber-300 {
+    animation: ll-pulse 1100ms ease-in-out infinite;
+  }
 }

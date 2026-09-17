@@ -51,7 +51,16 @@ const categories: Category[] = [
       { label: 'Priority queue', href: '/visualizer/queue/priority' },
     ],
   },
-  { label: 'Linked List', href: '/visualizer#linked-list' },
+  {
+    label: 'Linked List',
+    href: '/visualizer/linked-list/singly',
+    items: [
+      { label: 'Singly linked list', href: '/visualizer/linked-list/singly' },
+      { label: 'Doubly linked list', href: '/visualizer/linked-list/doubly' },
+      { label: 'Circular linked list', href: '/visualizer/linked-list/circular' },
+      { label: 'Operations', href: '/visualizer/linked-list/operations' },
+    ],
+  },
   { label: 'Tree', href: '/visualizer#tree' },
   { label: 'Graph', href: '/visualizer#graph' },
 ]
@@ -74,7 +83,7 @@ export function Sidebar() {
         {categories.map((category) => {
           const hasItems = Boolean(category.items)
           const isOpen = open[category.label]
-          const isActive = pathname === category.href || pathname.startsWith(`${category.href}/`)
+          const isActive = pathname === category.href || pathname.startsWith(`${category.href}/`) || (category.label === 'Linked List' && pathname.startsWith('/visualizer/linked-list/'))
 
           return (
             <div key={category.label} className={`group relative min-w-max lg:min-w-0 ${hasItems ? 'lg:z-20' : ''}`}>
