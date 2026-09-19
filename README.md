@@ -56,11 +56,11 @@ Then open [http://localhost:3000](http://localhost:3000) or you can also visit i
 
 This thing is being built in phases — not all modules are live yet. Rough order:
 
-- [x] Sorting + Searching
-- [x] Stack + Queue
-- [ ] Linked List
-- [ ] Trees (basic → advanced)
-- [ ] Graphs
-- [ ] Quizzes / complexity cheat sheet
+   - [x] Sorting + Searching
+   - [x] Stack + Queue
+   - [x] Linked List
+   - [ ] Trees (basic → advanced)   ← still in progress, 4A + 4B done, 4C + 4D left
+   - [ ] Graphs
+   - [ ] Quizzes / complexity cheat sheet
 
 Check the [issues](../../issues) tab to see what's cooking or to suggest a module.
