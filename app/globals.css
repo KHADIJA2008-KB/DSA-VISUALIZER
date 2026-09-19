@@ -192,6 +192,19 @@ html.dark .dark\:border-slate-800 {
     animation: ll-link 520ms ease-out both;
   }
 
+  @keyframes tree-node-pulse {
+    0%, 100% {
+      filter: drop-shadow(0 0 0 rgb(245 158 11 / 0));
+    }
+    50% {
+      filter: drop-shadow(0 0 7px rgb(245 158 11 / 0.75));
+    }
+  }
+
+  .tree-node-highlight {
+    animation: tree-node-pulse 1100ms ease-in-out infinite;
+  }
+
   .animate-ll-create:has(+ .sr-only),
   .border-amber-300 {
     animation: ll-pulse 1100ms ease-in-out infinite;
